@@ -1,0 +1,19 @@
+body {
+  padding-top: 117px;
+  background-color: #202930;
+}
+
+.top_banner {
+  height: 472px;
+  position: relative;
+  background-image: url(../img/top_bg_2.png);
+}
+
+.top_overlay {
+  background-image: url(../img/top_bg_glow.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
