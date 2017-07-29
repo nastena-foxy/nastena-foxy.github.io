@@ -1,6 +1,19 @@
+@font-face {
+  font-family: 'Harabara';
+  src: url('../fonts/Harabara.eot');
+  src: url('../fonts/Harabara.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/Harabara.woff') format('woff'),
+     url('../fonts/Harabara.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 body {
-  padding-top: 117px;
+  padding-top: 110px;
   background-color: #202930;
+}
+
+a {
+  color: #fdab37;
 }
 
 .top_banner {
@@ -17,3 +30,74 @@ body {
   width: 100%;
   height: 100%;
 }
+
+header {
+  height: 114px;
+  background-image: url(../img/top_mnu.png);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  margin-top: 23px;
+  display: block;
+}
+.mnu_top {
+  float: right;
+}
+
+.mnu_top a {
+  font-family: Harabara, Arial, sans-serif;
+  font-size: 19px;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, .6) 1px 2px;
+}
+
+.mnu_top li {
+  float: left;
+  position: relative;
+}
+
+.mnu_top li a {
+  background-image: url(../img/separate.png);
+  background-repeat: repeat-y;
+  display: block;
+  padding: 72px 26px 17px 26px;
+}
+
+.mnu_top li:last-child {
+  background-image: url(../img/separate.png);
+  background-repeat: repeat-y;
+  background-position: top right;
+}
+
+.mnu_top li.active a,
+.mnu_top li:hover a {
+  color: #fdab37;
+}
+
+.mnu_top .top_hover {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  width: 0;
+  left: 50%;
+  -webkit-transition: all.25s ease;
+  -moz-transition: all.25s ease;
+  -ms-transition: all.25s ease;
+  -o-transition: all.25s ease;
+  transition: all.25s ease;
+
+}
+
+.mnu_top li.active .top_hover,
+.mnu_top li:hover .top_hover {
+  background-color: #fdb146;
+  width: 100%;
+  left: 0;
+}
+
