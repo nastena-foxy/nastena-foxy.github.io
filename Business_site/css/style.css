@@ -16,6 +16,10 @@ a {
   color: #fdab37;
 }
 
+a, a:focus, button, button:focus {
+    outline: 0
+}
+
 .top_banner {
   min-height: 318px;
   position: relative;
@@ -143,4 +147,105 @@ header {
   margin-right: -450px;
 }
 
+.toggle_button_container {
+  position: relative;
+  height: 34px;
+  background: url(../img/line-shadow.png) repeat-x;
+	z-index: 100;
+}
 
+.slider_left_bg {
+  position: absolute;
+  width: 100%;
+  left: 162px;
+  top: -15px;
+  background: url(../img/slider_bg.png) repeat-y;
+  height: 72px;
+  z-index:200;
+}
+
+.slider_right_bg {
+  position: absolute;
+  width: 100%;
+  top: -15px;
+  left: 701px;
+  background: url(../img/slider_bg.png) repeat-y;
+  height: 72px;
+  z-index:200;
+}
+
+  .toggle_button {
+  position: absolute;
+	top: -20px;
+  background-color: #ec9a14;
+  background-image: url(../img/slider_g.png) 60px 0;
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  width: 540px;
+  height: 80px;
+  border-top: 1px solid #ffd781;
+  border-bottom: 1px solid #e89410;
+  border-radius: 7px;
+}
+
+.toggle_button>span {
+  position: absolute;
+  width: 60px;
+  height: 83px;
+  background-image: url(../img/slider_elements.png);
+  background-repeat: no-repeat;
+}
+
+.toggle_button>span:hover {
+	cursor: pointer;
+}
+
+span.arrow_prev {
+	left: -60px;
+	background-position: left top;
+}
+
+span.arrow_next {
+	right: -60px;
+	top: 0;
+	background-position: right top;
+}
+
+.toggle_button h3 {
+  float: left;
+  font-family: Harabara, Arial, sans-serif;
+  font-size: 50px;
+  color: #fff;
+  padding: 10px 0 0 15px;
+}
+
+.toggle_button h3 span {
+	font-size: 18px;
+  color: #fff;
+	padding-right: 5px;
+}
+
+.toggle_button h4 {
+  position: relative;
+  font-family: Harabara, Arial, sans-serif;
+  font-size: 22px;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, .5) 1px 1px;
+  top: 15px;
+  left: 10px;
+}
+
+.toggle_button p {
+  position:relative;
+   color: #fff;
+	padding: 2px 0 0 5px;
+  top: 20px;
+  left: 10px;
+}
+.toggle_button div {
+	overflow: hidden;
+	display: block;
+	height: 80px;
+  top: 20px;
+  left: 10px;
+}
