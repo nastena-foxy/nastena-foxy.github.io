@@ -1,9 +1,13 @@
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(30,144,255,0.5);
 }
+/* Social Icons */
 .social-icons {
   background-color: #000;
   padding: 5px;
@@ -15,8 +19,9 @@ body {
 .social-icons a {
   text-decoration: none;
 }
-#logo {
-  font-size: 24px;
+/* Navigation */
+.navbar-brand {
+  font-size: 24px !important;
 }
 a {
   color: #000 !important;
@@ -53,6 +58,10 @@ a:active {
     background-size: cover;
   }
 }
+li a {
+  font-size: 16px;
+}
+/* Slogan */
 .slogan-1,
 .slogan-2 {
   font-family: 'Playfair Display', serif;
@@ -106,9 +115,11 @@ svg {
     color: #000 !important;
   }
 }
+/* Brands */
 .brands {
   background-color: #fff;
 }
+/*Footer*/
 .footer {
   background-color: #141313;
   padding: 10px;
