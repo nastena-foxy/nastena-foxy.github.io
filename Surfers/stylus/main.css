@@ -22,6 +22,7 @@ body {
 /* Navigation */
 .navbar-brand {
   font-size: 24px !important;
+  padding-left: 10px;
 }
 a {
   color: #000 !important;
@@ -36,8 +37,8 @@ a:active {
 .nav-item.active {
   background-color: #00b0ff;
 }
-.navigation-menu {
-  padding-left: 130px !important;
+.navbar-nav {
+  padding-right: 10px;
 }
 @media (max-width: 1199px) {
   .navigation-menu {
@@ -139,10 +140,12 @@ svg {
 }
 .footer-copyright {
   text-align: left;
+  padding-left: 15px;
 }
 .footer-design {
   text-align: right;
   padding-right: 0;
+  margin-right: 0;
 }
 @media (max-width: 767px) {
   .footer-copyright {
@@ -190,4 +193,8 @@ svg {
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 0;
+}
+.cards {
+  padding: 15px 5px 5px 5px;
+  margin: 0;
 }
