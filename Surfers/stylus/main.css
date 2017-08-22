@@ -123,31 +123,34 @@ svg {
 }
 /*Footer*/
 .footer {
+  min-height: 40px;
+  height: auto;
   background-color: #141313;
   padding: 10px;
   display: flex;
   color: #fff;
+  text-transform: uppercase;
   line-height: 30px;
   font-size: 12px;
   font-weight: 400;
+  -webkit-box-pack: justify;
   justify-content: space-between;
-  min-height: 40px;
-  text-transform: uppercase;
 }
-.footer-copiright,
+.footer-copyright,
 .footer-contacts,
 .footer-design {
   min-height: 40px;
+  height: auto;
 }
 .footer-copyright {
   text-align: left;
   padding-left: 10px;
-  margin-left: 0;
 }
 .footer-design {
   text-align: right;
-  padding-right: 10px;
-  margin-right: 0;
+  position: relative;
+  padding-right: 0;
+  right: -10px;
 }
 @media (max-width: 767px) {
   .footer-copyright {
@@ -158,6 +161,7 @@ svg {
   }
   .footer-design {
     text-align: center !important;
+    right: 10px;
   }
 }
 @media (max-width: 767px) {
